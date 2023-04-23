@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <script src="js/bootstrap.min.js"></script>
     <title>Title</title>
 </head>
 <body>
 
     <main>
-        <div class="notices">
-            Noticias
+        <div class="news">
+            <img class="img-news" src="./assets/news1.png">
         </div>
         <div class="login">
-            Login
+            <div class="login-container rounded-20">
+                <div class="header-login">
+                    <img class="img-header" src="assets/unlam-large.png">
+                    <img class="img-header" src="assets/miel-large.png">
+                </div>
+                <div class="body-login">
+
+                    <form action="/interna" method="POST" class="form-login">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <input type="submit" class="button button-primary w-full" value="Ingresar">
+                    </form>
+
+                    <a href="/reset-password">Olvidé mi contraseña</a>
+
+                    <a href="https://mielingreso.unlam.edu.ar/" class="button button-secondary">Ir a Miel Ingresantes</a>
+                </div>
+            </div>
         </div>
     </main>
 
